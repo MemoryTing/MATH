@@ -1,0 +1,206 @@
+body{
+    background-image: url(./img/back.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#frame{
+    position: relative;
+    margin: 10px auto 10px;
+    width: 525px;
+    height: 525px;
+}
+#frame_0{
+    position: absolute;
+    width: 525px; 
+    height: 525px;
+    max-width: max-content;
+}
+#frame_t1{
+    background-image: url("./img/scissors.png");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: rgba(0,0,0, 0);
+}
+#frame_t2{
+    background-image: url("./img/paper.png");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 39%;
+    top: 12px;
+    color: rgba(0,0,0, 0);
+}
+#frame_t3{
+    background-image: url("./img/stone.png");
+    background-size: cover;
+    background-color:rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: rgba(0,0,0, 0);
+}
+#frame_t4{
+    background-image: url("./img/stone.png");
+    background-size: cover;
+    background-color:rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 12px;
+    top: 39%;
+    color: rgba(0,0,0, 0);
+}
+#frame_t5{
+    background-image: url("./img/scissors.png");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 39%;
+    top: 39%;
+    color: rgba(0,0,0, 0);
+}
+#frame_t6{
+    background-image: url("./img/paper.png");
+    background-size: cover;
+    background-color:rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 10px;
+    top: 39%;
+    color: rgba(0,0,0, 0);
+}
+#frame_t7{
+    background-image: url("./img/paper.png");
+    background-size: cover;
+    background-color:rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+    color: rgba(0,0,0, 0);
+}
+#frame_t8{
+    background-image: url("./img/stone.png");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 39%;
+    bottom: 10px;
+    color: rgba(0,0,0, 0);
+}
+#frame_t9{
+    background-image: url("./img/scissors.png");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: rgba(0,0,0, 0);
+}
+#scoreboard{
+    position: relative;
+    margin: 30% auto 30%;
+    width: 367px;
+    height: 270px;
+}
+#scoreboard_0{
+    position: absolute;
+    width: 350px;
+}
+.display{
+    background-color:rgba(0,0,0, 0);
+    border: none;
+    width: 175px;
+    position: absolute;
+    bottom: 5%;
+    font-size:80px;
+    color: black;
+}
+#win{
+    width: 800px;
+    max-width: 90vw;
+    z-index:90;
+}
+#score_fin{
+    position: absolute;
+    width: 175px;
+    max-width: 19.25vw;
+    max-height: 14vmin;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    bottom: 50%;
+    right: 27%;
+    z-index: 100;
+    color: black;
+    font-size: 14vmin;
+}
+#playagain{
+    background-image: url("./img/return.png");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    position: absolute;
+    width: 300px;
+    height: 110px;
+    max-width: 34vw;
+    max-height: 12.5vw;
+    bottom: 10%;
+    left: 5%;
+    z-index: 100;
+}
+#newgame{
+    background-image: url("./img/newgame.png");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    position: absolute;
+    width: 400px;
+    height: 120px;
+    max-width: 45vw;
+    max-height: 13.5vw;
+    bottom: 10%;
+    right: 5%;
+    z-index: 100;
+}
+#rule{
+    width: 800px;
+    max-width: 90vw;
+    z-index: 100;
+}
+#win2{
+    position: relative;
+}
+#win2_2{
+    position: absolute;
+    top: 20%;
+    max-width: 90vw;
+    z-index: 100;
+}

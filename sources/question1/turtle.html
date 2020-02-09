@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>question1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="turtle.css">
+    <script src="turtle.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+  </head>
+	<body>
+    <nav class="navbar navbar-inverse navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="../../math.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav ">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">MAP</a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript: click_center()">Center</a></li>
+                    <li><a href="javascript: click_leftup()">Left up</a></li>
+                    <li><a href="javascript: click_edgemiddle()">Edge middle</a></li>
+                    <li><a href="javascript: click_random()">Random</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="javascript: click_return()">Return</a></li>
+            <li class="nav-item"><a href="javascript: click_start()">Start</a></li>
+            <li><a href="javascript: click_rule()">Rule</a></li>
+          </ul>
+        </div>
+      </div>     
+    </nav>
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center" id="win2">
+        <div id="win2_2">
+          <img src="./img/win.png" id="win" style="display: none">
+          <input type="text" id="score_fin" value="  0" style="display: none">
+          <input type="button" id="playagain" onclick=playagain() style="display: none">
+          <input type="button" id="newgame" onclick=startnewgame() style="display: none">
+          <a href="javascript: closewindow()"><img src="./img/rule.png" id="rule"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7">
+          <div id="frame">
+            <img src="./img/frame.png" id="frame_0">
+            <input type="button" id="frame_t1" value="1" onclick=clickturtle(1)>
+            <input type="button" id="frame_t2" value="0" onclick=clickturtle(2)>
+            <input type="button" id="frame_t3" value="1" onclick=clickturtle(3)>
+            <input type="button" id="frame_t4" value="0" onclick=clickturtle(4)>
+            <input type="button" id="frame_t5" value="1" onclick=clickturtle(5)>
+            <input type="button" id="frame_t6" value="0" onclick=clickturtle(6)>
+            <input type="button" id="frame_t7" value="1" onclick=clickturtle(7)>
+            <input type="button" id="frame_t8" value="0" onclick=clickturtle(8)>
+            <input type="button" id="frame_t9" value="1" onclick=clickturtle(9)>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div id = "scoreboard">
+            <img src="./img/scoreboard.png" id="scoreboard_0">
+            <input type="text" class="display" id="score_now" value="  0" readonly style="left: 20px;">
+            <input type="text" class="display" id="score_best" value="  0" readonly style="right: 0;">
+          </div>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>
