@@ -18,6 +18,8 @@ function click_center(){
     document.getElementById("frame_t8").value = 3
     document.getElementById("frame_t9").style.backgroundImage="url(./img/paper.png)"
     document.getElementById("frame_t9").value = 3
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
 }
 function click_leftup(){
     document.getElementById("frame_t1").style.backgroundImage="url(./img/stone.png)"
@@ -38,6 +40,8 @@ function click_leftup(){
     document.getElementById("frame_t8").value = 3
     document.getElementById("frame_t9").style.backgroundImage="url(./img/paper.png)"
     document.getElementById("frame_t9").value = 3
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
 }
 function click_edgemiddle(){
     document.getElementById("frame_t1").style.backgroundImage="url(./img/paper.png)"
@@ -58,6 +62,8 @@ function click_edgemiddle(){
     document.getElementById("frame_t8").value = 3
     document.getElementById("frame_t9").style.backgroundImage="url(./img/paper.png)"
     document.getElementById("frame_t9").value = 3
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
 }
 function click_random(){
     var x = Math.random()
@@ -177,6 +183,8 @@ function click_random(){
         document.getElementById("frame_t9").style.backgroundImage="url(./img/scissors.png)"
         document.getElementById("frame_t9").value = 1
     }
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
 }
 function click_start(){
     store_init[0] = 1
