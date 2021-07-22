@@ -1,5 +1,7 @@
 var store_init = [0 , 1 , 0 , 1 , 0 , 1 , 0 , 1 , 0 , 1]
 function click_center(){
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
     document.getElementById("frame_t1").style.backgroundImage="url(./img/turtle.png)"
     document.getElementById("frame_t1").value = 1
     document.getElementById("frame_t2").style.backgroundImage="url(./img/turtle.png)"
@@ -20,6 +22,8 @@ function click_center(){
     document.getElementById("frame_t9").value = 1
 }
 function click_leftup(){
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
     document.getElementById("frame_t1").style.backgroundImage="url(./img/turtle_close.png)"
     document.getElementById("frame_t1").value = 0
     document.getElementById("frame_t2").style.backgroundImage="url(./img/turtle.png)"
@@ -40,6 +44,8 @@ function click_leftup(){
     document.getElementById("frame_t9").value = 1
 }
 function click_edgemiddle(){
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
     document.getElementById("frame_t1").style.backgroundImage="url(./img/turtle.png)"
     document.getElementById("frame_t1").value = 1
     document.getElementById("frame_t2").style.backgroundImage="url(./img/turtle_close.png)"
@@ -60,6 +66,8 @@ function click_edgemiddle(){
     document.getElementById("frame_t9").value = 1
 }
 function click_random(){
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
     var x = Math.random()
     if(x > 0.5){
         document.getElementById("frame_t1").style.backgroundImage="url(./img/turtle.png)"
@@ -143,6 +151,8 @@ function click_random(){
     }
 }
 function click_start(){
+    document.getElementById("score_best").value = "  0"
+    document.getElementById("score_now").value = "  0"
     store_init[0] = 1
     store_init[1] = document.getElementById("frame_t1").value
     store_init[2] = document.getElementById("frame_t2").value
